@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de Diego Fernando Martínez Santiago: especialista en desarrollo web, mantenimiento de redes y optimización de sistemas.">
+    <meta name="keywords" content="Diego Fernando Martínez Santiago, desarrollo web, mantenimiento de redes, portafolio de proyectos">
+    <meta name="author" content="Diego Fernando Martínez Santiago">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/modelos.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Portafolio de Diego Fernando Martínez Santiago</title>
+    <style>
+        .section {
+            display: none;
+        }
+        .section .barra{
+            
+            margin-top: -300px;
+    
+        }
+        .section .contenedorpartdos .imagendos{
+            transform: scale(0.8); /* Ajusta el valor para el tamaño deseado */
+            max-width: 100%; /* Opcional: ajusta el ancho máximo */
+           
+            
+            
+        }
+
+        .section.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h1 id="titulo">DIEGO MARTINEZ</h1>
+        <input id="checkbox2" type="checkbox">
+        <label class="toggle toggle2" for="checkbox2">
+            <div id="bar4" class="bars"></div>
+            <div id="bar5" class="bars"></div>
+            <div id="bar6" class="bars"></div>
+        </label>
+        <ul id="menu">
+            <li><a href="#" onclick="showSection('inicio'); closeMenu();">Inicio</a></li>
+            <li><a href="#" onclick="showSection('portafolio'); closeMenu();">Portafolio</a></li>
+            <li><a href="#" onclick="showSection('acercademi'); closeMenu();">Acerca de mí</a></li>
+            <li><a href="#" onclick="showSection('contacto'); closeMenu();">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    <script>function closeMenu() {
+        document.getElementById("checkbox2").checked = false;
+    }
+    </script>
+    
+    <!-- Sección Inicio -->
+    <div id="inicio" class="section active">
+        <div class="inicio">
+            <h1>Bienvenido a mi espacio digital.</h1><br>
+            <h2></h2><br>
+            <p>Aquí encontrarás una muestra de lo que hago, donde la creatividad se une con la funcionalidad, impulsada por un enfoque práctico en el desarrollo de software y la tecnología. Este portafolio refleja parte de mi trabajo y mi compromiso con soluciones que realmente marcan la diferencia. Explora mi trabajo y descubre cómo cada componente y cada detalle están diseñados con un propósito claro, enfocado en aportar valor.</p><br><br><br><br><br><br><br>
+        </div>
+        <script src="js/escribirTexto.js"></script>
+    </div>
+
+    <!-- Sección Portafolio -->
+    <div id="portafolio" class="section">
+        <div class="inicio">
+            <h1>Portafolio de Proyectos</h1><br>
+            <p>Te comparto algunos de mis proyectos y habilidades en desarrollo web, junto con otros en áreas complementarias como redes y mantenimiento de equipos. Te sugiero explorar aquellos que te resulten más interesantes para verlos en detalle.</p>
+        </div>
+    
+        <div class="contenedorproject">
+            <button class="carousel-btn prev-btn"><i class='bx bx-left-arrow-alt'></i></button>
+            
+            <div class="project-carousel">
+                <div class="project-card">
+                    <div class="image-container">
+                        <img src="img/computadora.png" alt="imagen no disponible">
+                    </div><br>
+                    <h2>Habilidades</h2><br>
+                    <a href="#" onclick="showSection('habilidades')" class="cta">
+                        <span class="hover-underline-animation">Conocer Más</span>
+                        <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
+                            <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)" fill="#007bff"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="image-container">
+                        <img src="img/SistemaFCQ.png" alt="imagen no disponible">
+                    </div><br>
+                    <h2>Sistema de Gestión Escolar</h2><br>
+                    <a href="#" onclick="showSection('sistema')" class="cta">
+                        <span class="hover-underline-animation">Conocer Más</span>
+                        <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
+                            <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
+                        </svg>
+                    </a>
+                </div>
+    
+                <div class="project-card">
+                    <div class="image-container">
+                        <img src="img/redes.png" alt="imagen no disponible">
+                    </div><br>
+                    <h2>Mantenimiento de Redes</h2><br>
+                    <a href="#" onclick="showSection('redes')"  class="cta">
+                        <span class="hover-underline-animation">Conocer Más</span>
+                        <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
+                            <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)" fill="#007bff"></path>
+                        </svg>
+                    </a>
+                </div>
+    
+                <div class="project-card">
+                    <div class="image-container">
+                        <img src="img/Animacion.png" alt="imagen no disponible">
+                    </div><br>
+                    <h2>Animación 3D</h2><br>
+                    <a href="#" onclick="showSection('Animacion')" class="cta">
+                        <span class="hover-underline-animation">Conocer Más</span>
+                        <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
+                            <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)" fill="#007bff"></path>
+                        </svg>
+                    </a>
+                </div>
+    
+                
+    
+                <div class="project-card">
+                    <div class="image-container">
+                        <img src="img/Procesamiento.png" alt="imagen no disponible">
+                    </div><br>
+                    <h2>Procesamiento de imágenes</h2><br>
+                    <a href="#" onclick="showSection('imagenes')" class="cta">
+                        <span class="hover-underline-animation">Conocer Más</span>
+                        <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
+                            <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)" fill="#007bff"></path>
+                        </svg>
+                    </a>
+                </div>
+                <!-- Repite los divs project-card con los demás proyectos -->
+            </div>
+            
+            <button class="carousel-btn next-btn"><i class='bx bx-right-arrow-alt'></i></button>
+            
+            <script src="js/carruselproject.js"></script>
+        </div>
+        <br><br>
+        
+        
+    </div>
+    
+    <!-- Sección Acerca de Mí -->
+    <div id="acercademi" class="section">
+        <div class="contenedorpartdos">
+            <div class="inicio">
+                <h1>Acerca de Mí</h1><br>
+                <p><b>Especialista en tecnología y computación, apasionado por desarrollar soluciones innovadoras y funcionales.</b></p>
+                <p>Soy Diego Fernando Martínez Santiago, egresado en Computación, con especialización en desarrollo web y programación en diversos lenguajes, como Python y Java. Cuento con experiencia en proyectos colaborativos y habilidades en diseño de bases de datos, programación y gestión de sistemas.</p>
+            </div>
+            <div class="inicio">
+                <div class="imagen">
+                    <img src="img/perfil.png" alt="imagen no disponible">
+            </div>
+        </div>
+        </div>
+
+        <div class="contenedorpartdosinv">
+            <div class="inicio">
+                <div class="unoxuno">
+                    <img src="img/formacion.jpg" alt="imagen no disponible">
+                </div>
+            </div>
+            <div class="inicio">
+                <h1>Formación Académica</h1><br>
+                <ul>
+                    <li>Licenciatura en Computación - Universidad Autónoma Benito Juárez de Oaxaca (UABJO).</li><br>
+                    <li>Técnico en Programación - CBTIS 150 «Carlos María de Bustamante», Ocotlán de Morelos, Oaxaca.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="contenedorpartdos">
+            <div class="inicio">
+                <h1>Habilidades Técnicas</h1><br>
+                <ul>
+                    <li>Uso de lenguajes y tecnologías web como HTML5, CSS3, JavaScript, PHP y WordPress.</li>
+                    <li>Diseño, implementación y administración de bases de datos MySQL.</li>
+                    <li>Mantenimiento de computadoras.</li>
+                    <li>Metodologías ágiles: Scrum, Kanban.</li>
+                    <li>Control de versiones: Git y GitHub.</li>
+                    <li>Uso de paquetería de Office.</li>
+                    <li>Conocimientos en Python.</li>
+                    <li>Instalación y uso de sistemas operativos: Windows y Linux.</li>
+                </ul><br><br>
+                <p>Ubicación: Oaxaca de Juárez, Oaxaca. Disponible para proyectos remotos y presenciales.</p>
+            </div>
+            <div class="inicio">
+            <div class="imagen">
+                <img src="img/compentencia.jpg" alt="imagen no disponible">
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Sección CONTACTO -->
+    <div id="contacto" class="section">
+        <div class="contenedorpartdos">
+            <div class="inicio">
+                <h1>Contacto</h1><br>
+                <p><b>¿Te interesa contactarme? Hazlo por la vía que más te convenga y te responderé rápidamente.</b></p>
+            </div>
+            <div class="imagentres">
+                <div class="macbook">
+                    <div class="inner">
+                        <div class="screen">
+                            <div class="face-one">
+                                <div class="camera"></div>
+                                <div class="display">
+                                    <div class="shade"></div>
+                                </div>
+                                <span>Diego Fernando</span>
+                            </div>
+                        </div>
+                        <div class="macbody">
+                            <div class="face-one">
+                                <div class="touchpad"></div>
+                                <div class="keyboard">
+                                    <!-- Teclas de la Macbook -->
+                                    <div class="key"></div>
+                                    <!-- Repite el div class="key" según sea necesario -->
+                                    <div class="key space"></div>
+                                    <!-- Teclas adicionales aquí -->
+                                    <div class="key f"></div>
+                                    <!-- Más teclas 'f' si es necesario -->
+                                </div>
+                            </div>
+                            <div class="pad one"></div>
+                            <div class="pad two"></div>
+                            <div class="pad three"></div>
+                            <div class="pad four"></div>
+                        </div>
+                    </div>
+                    <div class="shadow"></div>
+                </div>
+            </div>
+            <div class="Contact">
+                <h1>Información contacto</h1><br>
+                <p id="titulocontact"><img src="img/ubicacion.png" width="40"> Ubicación: Oaxaca de Juárez, Oaxaca.</p><br>
+                <p id="titulocontact"><img src="img/email.png" width="40"> Email: santiagodiego665@gmail.com</p><br>
+                <a href="https://www.linkedin.com/in/diegofernandomartinezsantiago">
+                    <img src="img/linkedin.png" width="40"> LinkedIn
+                </a><br><br>
+                <h1>Otras Plataformas</h1><br>
+                <a href="https://github.com/MmDiegoMartinez">
+                    <img src="img/github.png" width="40"> GitHub
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Ayuda -->
+    <div id="ayuda" class="section">
+        <div class="barrados">
+            <br><br>
+            <h1>Ayuda</h1>
+            <br><br>
+            <p><b>Bienvenido a la sección de Ayuda. Aquí encontrarás información y consejos para aprovechar al máximo tu visita a mi portafolio.</b></p>
+            
+            <br><br>
+            <h4>Navegación en el Sitio</h4>
+            <br>
+            <p><b>Portafolio:</b> Explora los proyectos destacados. Puedes hacer clic en "Conocer Más" para ver los detalles de cada proyecto.</p>
+            <br>
+            <p><b>Acerca de Mí:</b> Aquí comparto mi experiencia profesional, habilidades y formación para que conozcas un poco más sobre mi trabajo.</p>
+            <br>
+            <p><b>Contacto:</b> Encuentra diferentes formas de comunicarte conmigo, ya sea para consultas, sugerencias o posibles colaboraciones.</p>
+            
+            <br>
+            <h4>Preguntas Frecuentes (FAQ)</h4>
+            <br>
+            <b>¿Es posible descargar o acceder al código de los proyectos?</b>
+            <p>Sí, algunos proyectos enlazan a mi perfil de GitHub donde podrás ver y explorar el código.</p>
+            <br>
+            <b>¿Puedo colaborar en alguno de los proyectos?</b>
+            <p>¡Claro! Estoy abierto a colaborar y a recibir sugerencias sobre mis proyectos. Puedes enviarme un correo a través de mi email o en LinkedIn.</p>
+            
+            <br>
+            <h4>Requisitos Técnicos</h4>
+            <br>
+            <p>Este sitio funciona de la mejor manera en navegadores modernos como Chrome, Firefox, Safari y Edge. Aunque no es obligatorio, te recomiendo usar la última versión de tu navegador para disfrutar de todas las funcionalidades.</p>
+            
+            <br>
+            <h4>Problemas Comunes y Soluciones</h4>
+            <br>
+            <p><b>Imágenes que no se cargan:</b> Si una imagen no aparece, intenta actualizar la página. Si el problema continúa, puede ser un tema de conexión.</p>
+            
+            <br>
+            <h4>Contacto Adicional</h4>
+            <br>
+            <p>Si tienes alguna pregunta que no esté cubierta aquí o necesitas ayuda específica, no dudes en escribirme en la sección de Contacto. ¡Estoy aquí para ayudarte y escucharte!</p>
+        </div>
+    </div>
+    
+
+    
+
+    <!-- Sección de terminos y condiciones -->
+    <div id="terminos" class="section">
+        <div class="barrados">
+            <br><br>
+            <h1>Términos y Condiciones</h1>
+            <br><br>
+    
+            <h4>Uso del Sitio Web</h4>
+            <br>
+            <p>Este sitio web es un espacio de muestra y exposición de mi trabajo. Puedes explorar libremente los proyectos y secciones para conocer más sobre mi experiencia y habilidades.</p>
+            
+            <br><br>
+            <h4>Propiedad Intelectual</h4>
+            <br>
+            <p>Todo el contenido de este sitio, incluyendo imágenes, diseño y textos, es obra de Diego Fernando Martínez Santiago. Algunas imágenes han sido tomadas de fuentes sin derechos de autor y están integradas en el diseño del sitio. Todo el material puede ser apreciado y compartido libremente; sin embargo, agradeceré que cites mi nombre si decides usar o compartir alguna de las ideas, conceptos o recursos aquí expuestos.</p>
+            
+            <br><br>
+            <h4>Enlaces a Otros Sitios</h4>
+            <br>
+            <p>Algunos proyectos y perfiles enlazan a sitios externos como GitHub o LinkedIn. Te invito a explorarlos para que tengas un panorama completo de mis capacidades. No tengo control sobre los contenidos de esos sitios, por lo que te recomiendo consultar sus respectivas políticas si decides usarlos.</p>
+            
+            <br><br>
+            <h4>Actualizaciones</h4>
+            <br>
+            <p>Este sitio está en constante crecimiento y podría actualizarse con nuevos proyectos, información o secciones. Tu visita y retroalimentación siempre son bienvenidas para mantener el contenido relevante y de interés.</p>
+        </div>
+    </div>
+    
+    
+       
+    </div>
+    <!-- Sección de Política de Privacidad -->
+    <div id="politica" class="section">
+        <div class="barrados">
+            
+            <br><br>
+            <h1>Política de Privacidad</h1>
+            <br><br>
+    
+            <h4>Recopilación de Datos Personales</h4>
+            <br>
+            <p>No es necesario proporcionar información personal para explorar mi portafolio. Si decides contactarme, tu nombre y correo serán usados únicamente para responder a tu mensaje.</p>
+            
+            <br><br>
+            <h4>Enlaces Externos</h4>
+            <br>
+            <p>Mi portafolio puede incluir enlaces a otros sitios donde puedes ver mis proyectos y perfiles profesionales. La interacción con estos sitios está bajo sus propias políticas de privacidad.</p>
+            
+            <br><br>
+            <h4>Actualizaciones</h4>
+            <br>
+            <p>La política de privacidad podría cambiar si implemento nuevas funcionalidades en el sitio. Siempre podrás ver los cambios aquí.</p>
+        </div>
+    </div>
+    
+
+
+    <!-- Proyecto Sistema FCQ-->
+    <div id="sistema" class="section">
+        <div class="contenedorpartdos">
+            <div class="inicio">
+                <h1>Sistema de Gestión Escolar</h1><br>
+                <p><b>Desarrollo de una página web para gestionar calificaciones y administrar datos de estudiantes de la Facultad de Ciencias Químicas UABJO.</b></p>
+            </div>
+            <div class="imagendos">
+                <div class="inicio">
+                    <div class="laptop">
+                        <div class="pantalla">
+                            <div class="header"></div>
+                            <div class="text">Sistema de Gestión Escolar</div>
+                        </div>
+                        <div class="teclado"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="barra">
+            <h4>Descripción del Proyecto</h4><br>
+            <p>Este sistema de gestión escolar fue desarrollado en equipo para optimizar la administración académica de la facultad. Su propósito principal es permitir a los usuarios gestionar calificaciones, generar kardex y administrar información de estudiantes. Con roles específicos, cada usuario tiene permisos y funcionalidades adaptadas a sus responsabilidades en el sistema.</p><br><br>
+    
+            <h4>Funcionalidades del Sistema</h4><br>
+            <p><b>Secretaria: </b>Gestiona información de alumnos, incluyendo ver, guardar, editar y eliminar registros, además de generar listas de asistencia y reportes de calificaciones. Puede asignar materias a los alumnos.</p>
+            <p><b>Profesor: </b>Administra listas de asistencia, evalúa a los estudiantes y visualiza sus calificaciones.</p>
+            <p><b>Administrador: </b>Gestiona el periodo académico, asigna materias a los profesores y tiene control sobre las cuentas de profesores y secretarias, incluyendo restablecer contraseñas y ajustar permisos.</p><br>
+    
+            <h4>Algunas Imágenes del Proyecto</h4><br>
+            <div class="container-carousel">
+                <div class="carruseles" id="slider"></div>
+                <div class="btn-left"><i class='bx bx-chevron-left'></i></div>
+                <div class="btn-right"><i class='bx bx-chevron-right'></i></div>
+            </div>
+            <h5>Datos personales y logotipos censurados para proteger identidades y derechos de autor.</h5><br>
+    
+            <h4>Autenticación y Seguridad</h4><br>
+            <p>Cada rol en el sistema debe iniciar sesión para acceder a sus funcionalidades, asegurando que solo usuarios autorizados puedan interactuar con la información y los permisos específicos de su perfil. Se han implementado varias medidas de seguridad para proteger el sistema y los datos:</p><br>
+            <ul>
+                <li>Hash de contraseñas para proteger las credenciales de usuario.</li>
+                <li>Prevención de inyecciones SQL y otros ataques comunes.</li>
+                <li>Control de sesiones para evitar accesos no autorizados y mejorar la privacidad de los usuarios.</li>
+            </ul><br>
+    
+            <h4>Diseño y Gestión de la Base de Datos</h4><br>
+            <p>La base de datos de este sistema fue diseñada desde cero para las necesidades de gestión académica de la facultad. Su estructura permite un manejo eficiente de datos sensibles, como registros de estudiantes, materias, calificaciones y periodos académicos, además de roles de usuario (secretaría, profesor y administrador).</p><br>
+            <ul>
+                <li>Diseño con integridad referencial y claves primarias y foráneas para evitar inconsistencias.</li>
+                <li>Optimización de consultas para asegurar un rendimiento rápido y eficiente.</li>
+                <li>Escalabilidad para adaptarse a futuros requerimientos.</li>
+            </ul><br>
+    
+            <div class="centrar"><img src="img/fcq/bd.png" alt="Diseño de la Base de Datos del Sistema de Gestión Escolar" style="width:350px; height:250px;"><br><br></div><br>
+    
+            <h4>Características Técnicas</h4><br>
+            <ul>
+                <li>Lenguajes y tecnologías: HTML5, CSS3, JavaScript, PHP, MySQL.</li>
+                <li>Desarrollo colaborativo con metodologías ágiles (Scrum y Kanban).</li>
+                <li>Diseño responsivo para dispositivos móviles y de escritorio.</li>
+                <li>Sistema de seguridad con control de acceso según el rol de usuario.</li>
+                <li>Generación automática de kardex, listas de alumnos y reportes de calificaciones.</li>
+            </ul><br>
+    
+            <h4>Impacto y Logros</h4><br>
+            <p>Este sistema ha mejorado la organización y eficiencia de la gestión académica, facilitando la administración de datos y generación de reportes. Ha permitido ahorrar tiempo en tareas repetitivas y acceder a información actualizada de manera rápida y sencilla.</p><br>
+    
+            <div class="centrardos">
+                <button type="button" class="button" onclick="showSection('portafolio')">
+                    <div class="button-top">Regresar</div>
+                    <div class="button-bottom"></div>
+                    <div class="button-base"></div>
+                </button>
+            </div>
+    
+            <script src="js/script.js"></script>
+        </div>
+    </div>
+    
+    
+
+
+    <!-- redes suabjo -->
+    
+    <div id="redes" class="section">
+        <div class="contenedorpartdos">
+            <div class="inicio">
+                <h1>Mantenimiento de Redes</h1><br>
+                <p><b>Realización de un proyecto de mantenimiento y optimización de la infraestructura de red de la Facultad de Ciencias Químicas de la UABJO, mejorando la organización, cobertura y eficiencia de la conectividad.</b></p>
+            </div>
+
+            <div class="imagendos">
+                <div class="inicio">
+                    <div class="loader">
+                        <div class="box box0">
+                            <div></div>
+                        </div>
+                        <div class="box box1">
+                            <div></div>
+                        </div>
+                        <div class="box box2">
+                            <div></div>
+                        </div>
+                        <div class="box box3">
+                            <div></div>
+                        </div>
+                        <div class="box box4">
+                            <div></div>
+                        </div>
+                        <div class="box box5">
+                            <div></div>
+                        </div>
+                        <div class="box box6">
+                            <div></div>
+                        </div>
+                        <div class="box box7">
+                            <div></div>
+                        </div>
+                        <div class="ground">
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="barra">
+            <br><br><br><br>
+            <h4>Descripción del Proyecto</h4>
+            <br>
+            <p>Este proyecto de mantenimiento de redes fue realizado de manera colaborativa con el objetivo de optimizar la infraestructura de red en la Facultad de Ciencias Químicas (FCQ) de la Universidad Autónoma “Benito Juárez” de Oaxaca (UABJO). Se llevaron a cabo diversas acciones de mantenimiento y mejora para asegurar una conectividad más eficiente, segura y organizada en las instalaciones de la facultad.</p>
+
+            <br><br>
+            <h4>Objetivos del Proyecto</h4>
+            <br>
+            <ul>
+                <li>Mejorar la organización y el estado de la red mediante limpieza y mantenimiento físico de racks y cables de red.</li>
+                <li>Optimizar la cobertura y eficiencia del flujo de datos en la red de la facultad mediante la instalación de extensiones de red y repetidores.</li>
+                <li>Eliminar cables inactivos para reducir interferencias y desorden en la red.</li>
+            </ul>
+            <br>
+            <br>
+            <div class="centrar">
+                <img src="img/rack.jpg" alt="" style="width:250px; height:350px;">
+            </div>
+            <br><br><br><br><br><br><br>
+            <h4>Actividades Realizadas</h4>
+            <br>
+            <b> Limpieza y Organización de Racks y Cables de Red</b>
+            <p>Se realizó una inspección y limpieza exhaustiva de los racks de red, eliminando polvo acumulado y reorganizando los cables. Se retiraron varios metros de cableado inactivo, que no estaba conectado a ningún dispositivo y que solo ocupaba espacio y generaba desorden.</p>
+            <br>
+            <b> Instalación de Extensiones de Red y Repetidores</b>
+            <p>Para optimizar la cobertura de red en áreas críticas de la facultad, se instalaron extensiones de red y repetidores. Estos dispositivos han mejorado la conectividad en zonas donde la señal era débil, facilitando un flujo de datos más estable y eficiente para usuarios y dispositivos conectados.</p>
+            <br>
+            <b>Diseño de la Nueva Topología de Red</b>
+            <p>Se rediseñó la topología de red para mejorar la eficiencia en el enrutamiento y la distribución de la señal. Este nuevo diseño organiza de manera más óptima los puntos de conexión, minimizando la latencia y facilitando futuras expansiones o modificaciones.</p>
+            <br>
+            <br>
+            <div class="centrar">
+                <img src="img/cable.jpeg" alt="" style="width:250px; height:350px;">
+            </div>
+            <br><br><br><br><br><br><br>
+            <h4>Impacto y Logros</h4>
+            <br>
+            <p><b>Optimización de Recursos: </b>La limpieza y eliminación de cables inactivos ha permitido una mayor organización de los racks y la infraestructura general, lo que facilita su administración y reduce la posibilidad de fallas.</p>
+            <p><b>Cobertura Ampliada y Eficiente: </b>La instalación de repetidores ha aumentado la cobertura en zonas de baja señal, mejorando la experiencia de conectividad para estudiantes, profesores y personal administrativo.</p>
+
+            <br><h4>Tecnologías y Equipos Utilizados</h4>
+            <br>
+            <ul>
+                <li><b>Equipos de Red:</b> Repetidores, switches, cables de red, racks de almacenamiento.</li>
+                <li><b>Herramientas de Mantenimiento:</b> Herramientas de limpieza, organizadores de cables, medidores de señal de red.</li>
+                <li><b>Software de Monitoreo de Red:</b> Herramientas de diagnóstico para evaluar la conectividad antes y después del mantenimiento.</li>
+            </ul>
+            <br>
+            <h4>Conclusión</h4>
+            <br>
+            <p>El proyecto de mantenimiento de redes en la FCQ-UABJO ha logrado una red más organizada, eficiente y estable. Gracias al esfuerzo colaborativo, se mejoró la infraestructura existente y se incrementó la cobertura, proporcionando una conectividad más confiable para toda la comunidad de la facultad.</p>
+            <br>
+            <div class="centrardos">
+                <button type="button" class="button" onclick="showSection('portafolio')">
+                    <div class="button-top">Regresar</div>
+                    <div class="button-bottom"></div>
+                    <div class="button-base"></div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Animacion 3d-->
+    <div id="Animacion" class="section">
+        <div class="contenedorpartdos">
+            <div class="inicio">
+                <h1>Animación 3D</h1><br>
+                <p><b>Desarrollo de una animación 3D interactiva de un viajante en el tiempo, utilizando A-frame y JavaScript para efectos visuales y de movimiento.</b></p>
+            </div>
+    
+            <div class="imagendos">
+                <div class="inicio">
+                    <div class="carga">
+                        <div class="modelViewPort">
+                            <div class="eva">
+                                <div class="head">
+                                    <div class="eyeChamber">
+                                        <div class="eye"></div>
+                                        <div class="eye"></div>
+                                    </div>
+                                </div>
+                                <div class="body">
+                                    <div class="hand"></div>
+                                    <div class="hand"></div>
+                                    <div class="scannerThing"></div>
+                                    <div class="scannerOrigin"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="barra">
+            <h4>Descripción del Proyecto</h4>
+            <br>
+            <p>Este proyecto fue una exploración personal en animación 3D, aprovechando tecnologías modernas para crear una experiencia inmersiva y multiplataforma. Se usó A-frame, un framework basado en HTML, que permite la creación y visualización de contenido 3D directamente en cualquier navegador web. La animación fue complementada con JavaScript para agregar efectos y comportamientos interactivos.</p>
+            
+            <br><br>
+            <h4>Objetivos del Proyecto</h4>
+            <br>
+            <p>Crear una animación 3D en la que un viajante en el tiempo se traslada a diferentes épocas mediante un artefacto volador, utilizando animaciones variadas para simular el despegue, el destello de desaparición, y el aterrizaje en otra época.</p>
+            
+            <br>
+            <br>
+            <h4>Tecnologías y Equipos Utilizados</h4>
+            <br>
+            <ul>
+                <li><b>A-frame:</b> Para el modelado y la creación del entorno 3D. Al ser basado en HTML, A-frame facilita la integración con tecnologías web, haciéndolo accesible en navegadores.</li>
+                <li><b>JavaScript:</b> Implementado para efectos visuales interactivos y control de las animaciones.</li>
+                <li><b>Modelos 3D:</b> Se emplearon algunos modelos preexistentes para optimizar el desarrollo y enriquecer el entorno visual.</li>
+            </ul>
+            
+            <h4>Funcionamiento del Proyecto</h4>
+            <br>
+            <b>Interactividad</b>
+            <p>El usuario selecciona una época deseada a través de un formulario HTML. Una vez elegida la época, el viajante realiza una animación que lo lleva a bordo de un artefacto volador.</p>
+            
+            <br>
+            <b>Animaciones de Despegue y Aterrizaje</b>
+            <p>El artefacto realiza una serie de animaciones al despegar y aterrizar, incluyendo efectos especiales de destello para simular la desaparición. Las animaciones fueron diseñadas para agregar variedad y realismo al proceso de "viaje en el tiempo."</p>
+            
+            <br>
+            <b>Aleatoriedad en las Animaciones</b>
+            <p>Para enriquecer la experiencia, las animaciones de despegue y aterrizaje son seleccionadas aleatoriamente, lo que añade un toque único cada vez que el usuario selecciona una nueva época.</p>
+            
+            <br>
+            <div class="centrar">
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/LsTX6ELBgIE" 
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen></iframe>
+                </div>
+            </div>
+            <br><br><br><br><br>
+    
+            <h4>Impacto y Logros</h4>
+            <br>
+            <p><b>Exploración Creativa de Animaciones 3D:</b> La variedad de animaciones aleatorias ofrece una experiencia dinámica y atractiva para los usuarios, mostrando el potencial de A-frame combinado con JavaScript.</p>
+            <p><b>Desarrollo de Nuevas Habilidades:</b> Este proyecto permitió explorar y aplicar nuevas tecnologías, ampliando el conocimiento en animación 3D y programación web interactiva.</p>
+            
+            <br>
+            <h4>Conclusión</h4>
+            <br>
+            <p>La animación 3D de "Viajante en el Tiempo" muestra cómo la tecnología moderna puede usarse para crear experiencias visuales únicas y accesibles en plataformas web. Este proyecto es un paso hacia la exploración de mundos virtuales e interactivos, destacando el potencial de A-frame para la creación de contenido en 3D de alta calidad y fácil acceso.</p>
+            
+            <br>
+            <div class="centrardos">
+                <button class="boton" onclick="window.location.href='https://github.com/MmDiegoMartinez/MaquinaTiempo.git';">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 0.296997C5.37 0.296997 0 5.67 0 12.297C0 17.6 3.438 22.097 8.205 23.682C8.805 23.795 9.025 23.424 9.025 23.105C9.025 22.82 9.015 22.065 9.01 21.065C5.672 21.789 4.968 19.455 4.968 19.455C4.422 18.07 3.633 17.7 3.633 17.7C2.546 16.956 3.717 16.971 3.717 16.971C4.922 17.055 5.555 18.207 5.555 18.207C6.625 20.042 8.364 19.512 9.05 19.205C9.158 18.429 9.467 17.9 9.81 17.6C7.145 17.3 4.344 16.268 4.344 11.67C4.344 10.36 4.809 9.29 5.579 8.45C5.444 8.147 5.039 6.927 5.684 5.274C5.684 5.274 6.689 4.952 8.984 6.504C9.944 6.237 10.964 6.105 11.984 6.099C13.004 6.105 14.024 6.237 14.984 6.504C17.264 4.952 18.269 5.274 18.269 5.274C18.914 6.927 18.509 8.147 18.389 8.45C19.154 9.29 19.619 10.36 19.619 11.67C19.619 16.28 16.814 17.295 14.144 17.59C14.564 17.95 14.954 18.686 14.954 19.81C14.954 21.416 14.939 22.706 14.939 23.096C14.939 23.411 15.149 23.786 15.764 23.666C20.565 22.092 24 17.592 24 12.297C24 5.67 18.627 0.296997 12 0.296997Z" fill="white"></path>
+                    </svg>
+                    <p class="textos">Repositorio</p>
+                  </button>
+                
+            </div>
+            <br>
+            <div class="centrardos">
+                <button type="button" class="button" onclick="showSection('portafolio')">
+                    <div class="button-top">Regresar</div>
+                    <div class="button-bottom"></div>
+                    <div class="button-base"></div>
+                </button>
+                
+            </div>
+            
+        </div>
+    </div>
+    
+    <!--Procesamiento de imagenes-->
+    <div id="imagenes" class="section">
+        <div class="contenedorpartdos">
+            <div class="inicio">
+                <h1>Efectos Visuales en Imágenes</h1><br>
+                <p><b>Desarrollo de una aplicación que aplica diversos efectos visuales a imágenes estáticas, con movimiento o mediante interacción con el cursor, utilizando el lenguaje de programación TypeScript y técnicas de manipulación de píxeles.</b></p>
+            </div>
+    
+            <div class="imagendos">
+                <div class="inicio">
+                    <div class="loop cubes">
+                        <div class="item cubes"></div>
+                        <div class="item cubes"></div>
+                        <div class="item cubes"></div>
+                        <div class="item cubes"></div>
+                        <div class="item cubes"></div>
+                        <div class="item cubes"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="barra">
+            <br><br><br><br><br><br><br><br><br>
+            <h4>Descripción del Proyecto</h4>
+            <br>
+            <p>Este proyecto fue una exploración personal para aprender y aplicar nuevas tecnologías, especialmente TypeScript. La aplicación permite aplicar efectos visuales en imágenes mediante desplazamiento de píxeles, utilizando técnicas de manipulación de imágenes. Aunque los navegadores no interpretan TypeScript directamente, el código fue transpileado a JavaScript para asegurar su correcta ejecución en cualquier navegador web.</p>
+            <br>
+            <p>La aplicación ofrece tres tipos de efectos:</p>
+            <ul>
+                <li><b>Imágenes Estáticas:</b> Aplicación de efectos visuales sobre imágenes que no tienen movimiento.</li>
+                <li><b>Imágenes con Movimiento:</b> Efectos aplicados a imágenes con desplazamiento o animación.</li>
+                <li><b>Efectos de Cursor:</b> Las imágenes responden a la interacción del usuario mediante el cursor, generando efectos al pasar sobre ellas.</li>
+            </ul>
+            <br>
+    
+            <h4>Objetivos del Proyecto</h4>
+            <br>
+            <p>El principal objetivo fue explorar las capacidades de TypeScript para la manipulación de imágenes, aplicando efectos visuales como desenfoques, distorsiones, ondas y simulaciones cuánticas, entre otros. El proyecto también buscó mejorar la comprensión de cómo los navegadores pueden manejar tecnologías modernas como TypeScript a través de la transpilación a JavaScript.</p>
+            <br>
+            <div class="centrar">
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/LpDpmiuY1qE" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen></iframe>
+                </div>
+            </div>
+            <br><br><br><br><br>
+    
+            <h4>Tecnologías y Equipos Utilizados</h4>
+            <br>
+            <ul>
+                <li><b>TypeScript:</b> Lenguaje principal para la creación de la lógica y los efectos.</li>
+                <li><b>JavaScript:</b> Lenguaje de salida para la ejecución en navegadores, tras la transpilación desde TypeScript.</li>
+                <li><b>Manipulación de Imágenes:</b> Utilización de técnicas para la manipulación de píxeles y la creación de efectos visuales.</li>
+                <li><b>HTML/CSS:</b> Para la visualización y estilo de la aplicación web.</li>
+            </ul>
+            <br><br>
+    
+            <h4>Impacto y Logros</h4>
+            <br>
+            <p>Este proyecto permitió experimentar con técnicas de manipulación de imágenes de manera eficiente y visualmente impactante. También proporcionó una excelente oportunidad para mejorar mis habilidades con TypeScript, aprendiendo a transpilarlos a JavaScript para asegurar su funcionalidad en navegadores.</p>
+            <br>
+    
+            <h4>Conclusión</h4>
+            <br>
+            <p>La aplicación de efectos visuales en imágenes demuestra cómo técnicas de manipulación de píxeles pueden ser aprovechadas para crear experiencias visuales únicas e interactivas. Este proyecto me permitió profundizar en las capacidades de TypeScript y explorar la forma en que se pueden utilizar para mejorar la experiencia del usuario en aplicaciones web.</p>
+            <br>
+            <div class="centrardos">
+                <button class="boton" onclick="window.location.href='https://github.com/MmDiegoMartinez/Proyecto_Procesamiento.git';">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 0.296997C5.37 0.296997 0 5.67 0 12.297C0 17.6 3.438 22.097 8.205 23.682C8.805 23.795 9.025 23.424 9.025 23.105C9.025 22.82 9.015 22.065 9.01 21.065C5.672 21.789 4.968 19.455 4.968 19.455C4.422 18.07 3.633 17.7 3.633 17.7C2.546 16.956 3.717 16.971 3.717 16.971C4.922 17.055 5.555 18.207 5.555 18.207C6.625 20.042 8.364 19.512 9.05 19.205C9.158 18.429 9.467 17.9 9.81 17.6C7.145 17.3 4.344 16.268 4.344 11.67C4.344 10.36 4.809 9.29 5.579 8.45C5.444 8.147 5.039 6.927 5.684 5.274C5.684 5.274 6.689 4.952 8.984 6.504C9.944 6.237 10.964 6.105 11.984 6.099C13.004 6.105 14.024 6.237 14.984 6.504C17.264 4.952 18.269 5.274 18.269 5.274C18.914 6.927 18.509 8.147 18.389 8.45C19.154 9.29 19.619 10.36 19.619 11.67C19.619 16.28 16.814 17.295 14.144 17.59C14.564 17.95 14.954 18.686 14.954 19.81C14.954 21.416 14.939 22.706 14.939 23.096C14.939 23.411 15.149 23.786 15.764 23.666C20.565 22.092 24 17.592 24 12.297C24 5.67 18.627 0.296997 12 0.296997Z" fill="white"></path>
+                    </svg>
+                    <p class="textos">Repositorio</p>
+                  </button>
+                
+            </div>
+            <br>
+            <div class="centrardos">
+                <button type="button" class="button" onclick="showSection('portafolio')">
+                    <div class="button-top">Regresar</div>
+                    <div class="button-bottom"></div>
+                    <div class="button-base"></div>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Sección habilidades -->
+    
+    <div id="habilidades" class="section">
+        <div class="contenedorpartdos">
+            <div class="inicio">
+                <h1>Habilidades en Computación y Desarrollo Tecnológico</h1><br>
+                <p><b>Me complace presentarles mis habilidades y competencias, así como las tareas que tengo la capacidad de realizar con eficacia y profesionalismo.</b></p>
+            </div>
+    
+            <div class="imagendos">
+                <div class="inicio">
+                    <div class="terminal-loader">
+                        <div class="terminal-header">
+                            <div class="terminal-title">Status</div>
+                            <div class="terminal-controls">
+                                <div class="control close"></div>
+                                <div class="control minimize"></div>
+                                <div class="control maximize"></div>
+                            </div>
+                        </div>
+                        <div class="texto">Programando...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="barra">
+            <br><br><br><h4>Instalación, Configuración y Uso de Sistemas Operativos</h4><br>
+            <p><b>Experiencia en Windows y Linux: </b>Conocimiento práctico en la instalación y configuración de sistemas operativos, incluidos los ajustes necesarios para optimizar su rendimiento y personalización.</p>
+            <p><b>Optimización de Sistemas: </b>Capacidad para mejorar el rendimiento del sistema mediante ajustes y configuración avanzada, garantizando una experiencia de usuario más ágil.</p>
+            <br>
+            <h4>Reparación y Mantenimiento de Hardware y Software</h4><br>
+            <p><b>Diagnóstico y Solución de Problemas: </b>Habilidades para identificar y resolver problemas técnicos, tanto a nivel de hardware (componentes físicos) como de software (programas y sistemas).</p>
+            <p><b>Actualización de Componentes: </b>Experiencia en la mejora y actualización de equipos, desde la instalación de software hasta la optimización de recursos y el reemplazo de hardware cuando es necesario.</p>
+            <br><div class="centrar"><img src="img/compu.jpeg" alt="" style="width:350px; height:250px;"></div>
+            <br>
+    
+            <h4>Desarrollo de Software</h4><br>
+            <p><b>Creación de Aplicaciones y Soluciones Tecnológicas: </b>Experiencia en escribir y estructurar código para desarrollar aplicaciones, sitios web, sistemas de gestión, y otras soluciones que satisfacen necesidades específicas.</p>
+            <p><b>Mantenimiento y Actualización de Código: </b>Revisión y mejora de proyectos de software existentes para corregir errores y añadir nuevas funcionalidades según las necesidades del proyecto.</p>
+            <br><div class="centrar"><img src="img/foto.jpeg" alt="" style="width:350px; height:250px;"><br><br></div>
+            <br>
+    
+            <h4>Gestión de Bases de Datos</h4><br>
+            <p><b>Creación y Estructuración de Bases de Datos: </b>Diseño de bases de datos sólidas que faciliten la organización y recuperación de la información de forma eficiente.</p>
+            <p><b>Manipulación e Integración de Datos: </b>Habilidades en la administración de datos, desde la actualización hasta la integración en sistemas complejos y aplicaciones.</p>
+            <br><div class="centrar"><img src="img/tablas.png" alt="" style="width:350px; height:250px;"><br><br></div>
+            <br>
+    
+            <h4>Documentación Técnica</h4><br>
+            <p><b>Creación de Guías y Comentarios en Código: </b>Escritura de documentación detallada para facilitar el mantenimiento y comprensión del código, permitiendo que otros desarrolladores puedan trabajar en el proyecto con fluidez.</p>
+            <p><b>Manual de Usuario: </b>Desarrollo de guías para usuarios finales que expliquen el uso y mantenimiento del software, asegurando su correcta utilización.</p>
+            <br>
+    
+            <h4>Soporte Técnico</h4><br>
+            <p><b>Asistencia a Usuarios y Desarrolladores: </b>Apoyo técnico para resolver problemas relacionados con el software y sus funcionalidades, asegurando que los usuarios tengan una experiencia satisfactoria y que otros desarrolladores comprendan el sistema.</p>
+            <br><div class="centrardos">
+                <button type="button" class="button" onclick="showSection('portafolio')">
+                    <div class="button-top">Regresar</div>
+                    <div class="button-bottom"></div>
+                    <div class="button-base"></div>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="pie">
+        <a href="#" onclick="showSection('ayuda')">Ayuda</a>
+        <a href="#" onclick="showSection('terminos')">Términos y Condiciones</a>
+        <a href="#" onclick="showSection('politica')">Política de Privacidad</a>
+    </div>
+    
+    <footer>
+        <p>&copy; <span id="year"></span> Diego Fernando Martínez Santiago. Todos los derechos reservados.</p>
+    </footer>
+    
+    <script>
+        // Mostrar la sección seleccionada
+        function showSection(sectionId) {
+            // Ocultar todas las secciones
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => section.classList.remove('active'));
+            
+            // Mostrar solo la sección seleccionada
+            const selectedSection = document.getElementById(sectionId);
+            selectedSection.classList.add('active');
+        }
+
+        // Actualizar el año automáticamente en el pie de página
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="js/visible.js"></script>
+</body>
+
+</html>
